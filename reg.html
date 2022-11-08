@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dune.uz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style-reg.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="icon" type="img/png" href="img/favicon-orangeGS.png">
+</head>
+<body>
+    <!--Header-->
+    <div class="container">
+        <header class="header">
+            <a href="index.html">
+                <img src="img/DLogoGS.png" alt="Logo" class="main__logo">
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav__link">Главная</a>
+                <a href="routes.html" class="nav__link">Маршруты</a>
+                <a href="gallery.html" class="nav__link">Галерея</a>
+                <a href="about.html" class="nav__link">О нас</a>
+                <a href="#contacts" class="nav__link">Контакты</a>
+            </nav>
+            <a href="#" class="header__button">Войти</a>
+        </header>
+    </div>
+
+    <!--Tabs-->
+    <div class="container fullwidth">
+        <div class="form-container">
+            <form class="form" action="/" method="post">
+                <h2 class="form__title">Регистрация</h2>
+                <h3 class="form__subtitle">Введите ваши данные:</h3>
+                <input type="text" name="name" placeholder="Ваше имя..." class="form__input">
+                <input type="text" name="lastname" placeholder="Ваша фамилия..." class="form__input">
+                <input type="email" name="email" placeholder="E-mail..." class="form__input">
+                <h3 class="form__subtitle">Придумайте надежный пароль:</h3>
+                <input type="password" name="password" placeholder="Пароль..." class="form__input">
+                <input type="password" name="password-true" placeholder="Подтвердите пароль..." class="form__input">
+                <h3 class="form__subtitle">Ознакомьтесь с <u>политикой конфиденциальности</u></h3>
+                <button class="form__button">Зарегестрироваться</button>
+            </form>
+        </div>
+    </div>
+    
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container footer__position">
+            <div class="footer__inner">
+                <img src="img/CamelLogoGS.png" alt="Dune.uz" class="footer__logo footer__section">
+                <div class="footer__section" id="contacts">
+                    <ul>
+                        <li class="footer__list-item">
+                            <b>Контакты:</b>
+                        </li>
+                        <li class="footer__list-item">
+                            100124,<br>Республика Узбекистан, г. Ташкент,<br>Мирзо-Улугбекский р-н, 11/12
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="tel:+998911647045" class="footer__link">+998 (91) 164-70-45</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="mailto:info@dune.uz" class="footer__link">info@dune.uz</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <ul>
+                        <li class="footer__list-item">
+                            <b>Навигация:</b>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="index.html" class="footer__link">Главная</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="routes.html" class="footer__link">Маршруты</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="gallery.html" class="footer__link">Галерея</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="about.html" class="footer__link">О нас</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__inner bottom">
+                <p class="footer__rights">© 2022 Все права защищены | Designed by Arthur</p>
+                <ul class="footer__social-links">
+                    <li class="footer__social-links__item">
+                        <a href="#" target="_blank">
+                            <img src="img/Instagram.svg" class="footer__social-link-hover">
+                        </a>
+                    </li>
+                    <li class="footer__social-links__item">
+                        <a href="#" target="_blank">
+                            <img src="img/Telegram.svg" class="footer__social-link-hover">
+                        </a>
+                    </li>
+                    <li class="footer__social-links__item">
+                        <a href="#" target="_blank">
+                            <img src="img/Youtube.svg" class="footer__social-link-hover">
+                        </a>
+                    </li>
+                    <li class="footer__social-links__item">
+                        <a href="#" target="_blank">
+                            <img src="img/Twitter.svg" class="footer__social-link-hover">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--Owl-Carousel(Slider)-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--Scripts-->
+    <script src="js/gallery-tabs.js"></script>
+</body>
+</html>
