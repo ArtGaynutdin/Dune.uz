@@ -1,0 +1,283 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+/* width */
+::-webkit-scrollbar {
+	width: 16px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+  }
+
+  ::-webkit-scrollbar-button {
+	background: #f1f1f1;
+	height: 4px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	width: 10px;
+	background: #888;
+	border-radius: 20px;
+	border: 4px solid #f1f1f1;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #E46D07; 
+  }
+
+::selection{
+    background-color: #E46D07;
+    color: #fff;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: Ubuntu, Tahoma;
+	font-size: 18px;
+}
+
+.container {
+	width: 1110px;
+	margin: 0 auto;
+	height: auto;
+}
+
+/*------------- About Us -------------*/
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	width: 100%;
+	min-height: 540px;
+	margin-top: 70px;
+}
+
+.about__title {
+	width: 50%;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.about__title span {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 145%;
+    color: #E46D07;
+}
+
+.about__photo {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    /* background: url(../img/FamilyGS.jpg) no-repeat center;
+    background-size: cover; */
+}
+
+/*------------- Our Team -------------*/
+
+.team {
+	margin-top: 35px;
+	padding: 0 65px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.team__title {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 145%;
+
+	text-align: center;
+
+	margin: 0 0 50px 0;
+	color: #E46D07;
+}
+
+.author {
+	width: 100%;
+	min-height: 380px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.author__photo {
+	width: 380px;
+	height: 380px;
+	border-radius: 50%;
+}
+
+.author__intro {
+	width: 55%;
+	display: flex;
+	flex-direction: column;
+}
+
+.author__intro.right {
+	text-align: right;
+}
+
+.author__title {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 140%;
+	color: #E46D07;
+	margin: 15px 0;
+}
+
+.author__text {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 140%;
+	color: #5A5A5A;
+	margin: 0 0 15px 0;
+}
+
+/*------------- Responsive -------------*/
+
+.marg-top {
+    margin-top: 100px;
+}
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.container.fullwidth {
+		width: 100%;
+	}
+	.container.marg {
+		/* height: 1470px; */
+		margin-bottom: 100px;
+	}
+	.about__title {
+		width: 40%;
+		font-size: 26px;
+	}
+	.about__title span {
+		font-size: 72px;
+	}
+	.about__photo {
+		width: 400px;
+		height: 400px;
+	}
+	.team {
+		padding: 0;
+	}
+	.author__photo {
+		width: 300px;
+		height: 300px;
+	}
+	.author__title {
+		font-size: 24px;
+	}
+	.author__text {
+		font-size: 18px;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	.container.fullwidth {
+		width: 100%;
+	}
+	.container.marg {
+		/* height: 1470px; */
+		margin-bottom: 100px;
+	}
+	.about {
+		flex-direction: column;
+	}
+	.about__title {
+		width: 100%;
+	}
+	.author {
+		flex-direction: column;
+	}
+	.author.individ {
+		flex-direction: column-reverse;
+	}
+	.author__intro {
+		width: 100%;
+		text-align: center;
+	}
+	.author__intro.right {
+		text-align: center;
+	}
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	.container.fullwidth {
+		width: 100%;
+	}
+	.container.marg {
+		height: auto;
+		margin-bottom: 100px;
+	}
+	.about__photo {
+		margin-top: 20px;
+		width: 320px;
+		height: 320px;
+	}
+}

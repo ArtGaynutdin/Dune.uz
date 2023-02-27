@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dune.uz | Главная</title>
+
+    <!-- Ubuntu Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Link AnimationJS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="styles/main-style.css">
+    <!-- Header Style -->
+    <link rel="stylesheet" href="styles/header-style.css">
+    <!-- Footer Style -->
+    <link rel="stylesheet" href="styles/footer-style.css">
+    <link rel="icon" type="img/png" href="images/icons/favicon-orangeGS.png">
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <!-- Логотип-ссылка слева -->
+            <a href="index.html" class="header__logo">
+                <img src="images/icons/DLogoGS.png" alt="Logo">
+            </a>
+            <!-- Оболочка для ссылок -->
+            <nav class="header__menu" id="sidepanel">
+                <!-- Список ссылок -->
+                <ul class="header__list">
+                    <li>
+                        <a href="index.html" class="header__link active-link">Главная</a>
+                    </li>
+                    <li>
+                        <a href="routes.html" class="header__link">Маршруты</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html" class="header__link">Галерея</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="header__link">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" class="header__link" id="con-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Кнопка бургер < 992px -->
+            <button class="header__burger">
+                <img src="images/icons/bgl-con.png" alt="Menu" class="menu__b">
+                <img src="images/icons/bgx-con.png" alt="Menu" class="menu__x">
+            </button>
+        </div>
+    </header>
+
+    <div class="container intro fullwidth">
+        <div class="swiper-intro" id="intro-slider">
+            <img src="images/Clouds.png" alt="BG" class="intro__cloud top">
+            <img src="images/Clouds.png" alt="BG" class="intro__cloud bottom">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/main-slider/header-photo_01.jpg" alt="Photo">
+                    <h1>Открой для себя<br>неизведанный Узбекистан!</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/main-slider/header-photo_02.jpg" alt="Photo">
+                    <h1>Открой для себя<br>неизведанный Узбекистан!</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/main-slider/header-photo_03.jpg" alt="Photo">
+                    <h1>Открой для себя<br>неизведанный Узбекистан!</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/main-slider/header-photo_04.png" alt="Photo">
+                    <h1>Открой для себя<br>неизведанный Узбекистан!</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/main-slider/header-photo_05.jpg" alt="Photo">
+                    <h1>Открой для себя<br>неизведанный Узбекистан!</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/main-slider/header-photo_06.png" alt="Photo">
+                    <h1>Открой для себя<br>неизведанный Узбекистан!</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/main-slider/header-photo_07.png" alt="Photo">
+                    <h1>Открой для себя<br>неизведанный Узбекистан!</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/main-slider/header-photo_08.png" alt="Photo">
+                    <h1>Открой для себя<br>неизведанный Узбекистан!</h1>
+                </div>
+                <div class="swiper-pagination header-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Articles-->
+    <div class="container marg">
+        <section class="news">
+            <article class="article" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800" data-aos-anchor-placement="top-bottom" data-aos-once="true">
+                <img src="images/main-slider/header-photo_05.jpg" alt="Photo" class="article__pic">
+                <p class="article__date">Артур, 02/08/2022</p>
+                <h2 class="article__title">Путешествие к горному ущелью на реке Коксу</h2>
+                <p class="article__text">Удивительный и невероятно живописный маршрут, длиною в 20км, проложеный вдоль горной реки с кристально чистой водой, конечной точкой которого является красивейшее горное ущелье!</p>
+                <a href="articles/article-1.html" class="article__button">Читать полностью</a>
+            </article>
+            <article class="article" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800" data-aos-anchor-placement="top-bottom" data-aos-once="true">
+                <img src="images/main-slider/header-photo_03.jpg" alt="Photo" class="article__pic">
+                <p class="article__date">Артур, 28/08/2022</p>
+                <h2 class="article__title">Экстримальный поход к водопаду Гулькамсая</h2>
+                <p class="article__text">Непредсказуемый и поражающий своей невероятной красотой поход к водопаду, у истоков горной Гулькамсая!</p>
+                <a href="articles/article-2.html" class="article__button">Читать полностью</a>
+            </article>
+        </section>
+    </div>
+
+    <div class="container">
+        <div class="swiper-socials" id="socials-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/socialnet-logos/telegram-links.png" alt="Telegram">
+                    <h2>Читай больше полезных материалов<br>в нашем <a href="https://t.me/duneuz" target="_blank">Телеграм-канале!</a></h2>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/socialnet-logos/instagram-links.png" alt="Instagram">
+                    <h2>Больше ярких моментов<br>у нас в <a href="https://instagram.com/duneuz" target="_blank">Инстаграме!</a></h2>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/socialnet-logos/youtube-links.png" alt="Youtube">
+                    <h2>Смотри колоритные видеоотчеты<br>на нашем <a href="https://youtube.com/channel/UC8iFPIPltpnwJkgDfgajmJQ" target="_blank">YouTube-канале!</a></h2>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/socialnet-logos/vk-links.png" alt="VK">
+                    <h2>Присоединяйся к нашему<br>сообществу во <a href="https://vk.com/duneuz" target="_blank">ВКонтакте!</a></h2>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/socialnet-logos/tiktok-links.png" alt="Tiktok">
+                    <h2>Вдохнавляйся атмосферным<br>контентом у нас в <a href="tiktok.com/@duneuz" target="_blank">Тиктоке!</a></h2>
+                </div>
+            </div>
+            <div class="swiper-pagination socials-pagination"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3 class="swiper-footer__title">Популярные материалы:</h3>
+        <div class="swiper-footer" id="footer-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="albums/album-1.html">
+                        <img src="images/albums/001/Photo_18.jpg" alt="Photo">
+                        <div class="slide-text">
+                            <h3>Щель на Коксу</h3>
+                            <p>Поход на Коксу</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="albums/album-2.html">
+                        <img src="images/albums/002/Photo_01.jpg" alt="Photo">
+                        <div class="slide-text">
+                            <h3>Чимганские горы</h3>
+                            <p>Поход на Гулькам</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="albums/album-1.html">
+                        <img src="images/albums/001/Photo_02.jpg" alt="Photo">
+                        <div class="slide-text">
+                            <h3>Непреступные скалы</h3>
+                            <p>Поход на Коксу</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="albums/album-2.html">
+                        <img src="images/albums/002/Photo_06.jpg" alt="Photo">
+                        <div class="slide-text">
+                            <h3>Остров Пасхи</h3>
+                            <p>Поход на Гулькам</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="albums/album-1.html">
+                        <img src="images/albums/001/Photo_14.jpg" alt="Photo">
+                        <div class="slide-text">
+                            <h3>Природные небоскребы</h3>
+                            <p>Поход на Коксу</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="albums/album-2.html">
+                        <img src="images/albums/002/Photo_03.jpg" alt="Photo">
+                        <div class="slide-text">
+                            <h3>Гулькамское ущелье</h3>
+                            <p>Поход на Гулькам</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination footer-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container footer__position">
+            <div class="footer__inner">
+                <img src="images/icons/CamelLogoGS.png" alt="Dune.uz" class="footer__logo footer__section">
+                <div class="footer__section" id="contacts">
+                    <ul>
+                        <li class="footer__list-item">
+                            <b>Контакты:</b>
+                        </li>
+                        <li class="footer__list-item">
+                            100124,<br>Республика Узбекистан, г. Ташкент
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="tel:+998911647045" class="footer__link">+998 (91) 164-70-45</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="mailto:info@dune.uz" class="footer__link">info@dune.uz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__inner bottom">
+                <p class="footer__rights">
+                    © 2022 - 2023 Developed by <a href="https://instagram.com/bayram.live?igshid=OTJlNzQ0NWM=" target="_blank">Arthur</a> | Все права защищены
+                </p>
+                <ul class="footer__social-links">
+                    <li class="footer__social-links__item">
+                        <a href="https://instagram.com/duneuz" target="_blank">
+                            <img src="images/icons/Instagram.svg" class="footer__social-link-hover">
+                        </a>
+                    </li>
+                    <li class="footer__social-links__item">
+                        <a href="https://t.me/duneuz" target="_blank">
+                            <img src="images/icons/Telegram.svg" class="footer__social-link-hover">
+                        </a>
+                    </li>
+                    <li class="footer__social-links__item">
+                        <a href="https://youtube.com/channel/UC8iFPIPltpnwJkgDfgajmJQ" target="_blank">
+                            <img src="images/icons/Youtube.svg" class="footer__social-link-hover">
+                        </a>
+                    </li>
+                    <li class="footer__social-links__item">
+                        <a href="https://vk.com/duneuz" target="_blank">
+                            <img src="images/icons/VKontakte.svg" class="footer__social-link-hover">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Scripts-->
+    <script src="scripts/index-script.js"></script>
+    <script src="scripts/header-script.js"></script>
+</body>
+</html>

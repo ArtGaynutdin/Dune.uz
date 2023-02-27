@@ -1,0 +1,246 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: Ubuntu, Tahoma;
+	font-size: 18px;
+}
+
+.container {
+	width: 1110px;
+	margin: 0 auto;
+	height: auto;
+}
+
+/*----------- Header -----------*/
+
+body.lock {
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    z-index: 50;
+    /* margin: 30px 0; */
+    padding: 10px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.header__logo {
+    width: 38px;
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+.header__burger {
+    display: none;
+}
+
+.header__list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.header__list li {
+    padding: 15px 35px;
+}
+
+.header__list li:first-child {
+    padding-left: 0px;
+}
+
+.header__list li:last-child {
+    padding-right: 0px;
+}
+
+.header__link {
+    color: #EFA345;
+    transition: all 0.4 ease;
+}
+
+.header__link.active-link {
+    font-weight: 700;
+    color: #E46D07;
+}
+
+.header__link:hover {
+    color: #E46D07;
+    text-decoration: underline;
+}
+
+.arc {
+    margin-top: 100px;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+/*------------- Responsive -------------*/
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	/* .container.fullwidth {
+		width: 100%;
+	} */
+    .header {
+        padding: 0;
+    }
+    .header__burger {
+        display: block;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #FFF;
+
+        position: relative;
+        z-index: 3;
+    }
+    .header__menu {
+        position: fixed;
+        /* top: -100%;
+        left: 0; */
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #FFF;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: all 0.5s ease 0s;
+    }
+    .header__menu.active {
+        right: 0;
+    }
+    .header__list {
+        display: block;
+        width: 100%;
+    }
+    .header__list li {
+        /* margin: 50px 0; */
+        padding: 25px 0;
+    }
+    .header__link {
+        font-size: 18px;
+    }
+    .header__logo {
+        position: relative;
+        z-index: 3;
+    }
+    .menu__b {
+        display: block;
+        scale: 1;
+        transition: all 0.5s ease 0s;
+    }
+    .menu__x {
+        display: none;
+        scale: 0;
+        transition: all 0.5s ease 0s;
+    }
+    .menu__b.tap {
+        display: none;
+        scale: 0;
+    }
+    .menu__x.tap {
+        display: block;
+        scale: 1;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	/* .container.fullwidth {
+		width: 100%;
+	} */
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	/* .container.fullwidth {
+		width: 100%;
+	} */
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	/* .container.fullwidth {
+		width: 100%;
+	} */
+}
