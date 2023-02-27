@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dune.uz | Статья</title>
+
+    <!-- Ubuntu & Lora Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Link AnimationJS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="articles-style.css">
+    <!-- Header Style -->
+    <link rel="stylesheet" href="../styles/header-style.css">
+    <!-- Footer Style -->
+    <link rel="stylesheet" href="../styles/footer-style.css">
+    <link rel="icon" type="img/png" href="../images/icons/favicon-orangeGS.png">
+</head>
+<body>
+    <!--Progress Line-->
+    <div id="bar"></div>
+
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <!-- Логотип-ссылка слева -->
+            <a href="../index.html" class="header__logo">
+                <img src="../images/icons/DLogoGS.png" alt="Logo">
+            </a>
+            <!-- Оболочка для ссылок -->
+            <nav class="header__menu" id="sidepanel">
+                <!-- Список ссылок -->
+                <ul class="header__list">
+                    <li>
+                        <a href="../index.html" class="header__link">Главная</a>
+                    </li>
+                    <li>
+                        <a href="../routes.html" class="header__link active-link">Маршруты</a>
+                    </li>
+                    <li>
+                        <a href="../gallery.html" class="header__link">Галерея</a>
+                    </li>
+                    <li>
+                        <a href="../about.html" class="header__link">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" class="header__link" id="con-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Кнопка бургер < 992px -->
+            <button class="header__burger">
+                <img src="../images/icons/bgl-con.png" alt="Menu" class="menu__b">
+                <img src="../images/icons/bgx-con.png" alt="Menu" class="menu__x">
+            </button>
+        </div>
+    </header>
+
+    <!--Intro-->
+    <div class="container">
+        <section class="intro marg-top">
+            <img src="../images/about-us/ArthurGS.jpg" alt="Author" class="intro__photo">
+            <div class="intro__inner">
+                <div class="author-social">
+                    <p>Артур<br>28/08/2022</p>
+                    <ul class="social-share">
+                        <li class="social-share__item">
+                            <a href="https://instagram.com/duneuz" target="_blank">
+                                <img src="../images/icons/share__logo__instagram.svg" class="social-share__item__link">
+                            </a>
+                        </li>
+                        <li class="social-share__item">
+                            <a href="https://t.me/duneuz" target="_blank">
+                                <img src="../images/icons/share__logo__telegram.svg" class="social-share__item__link">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="title-view">
+                    <h2 class="intro__title">
+                        Экстримальный поход к водопаду Гулькамсая
+                    </h2>
+                    <a href="../albums/album-2.html">Смотреть фотоотчет</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--Top Photo-->
+    <div class="container fullwidth">
+        <div class="topphoto">
+            <img src="../images/articles/002/shape_top.jpg" alt="Main" class="photo">
+            <img src="../images/Clouds.png" alt="Cloud" class="cloud top">
+            <img src="../images/Clouds.png" alt="Cloud" class="cloud bottom">
+        </div>
+    </div>
+
+    <!--Steps-->
+    <div class="container fullwidth">
+        <section class="all-steps">
+            <article class="step" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800" data-aos-anchor-placement="top-bottom" data-aos-once="true">
+                <p><span>Б</span>ерега реки Гулькамсай – живописные берёзовые рощи и поляны с видом на самую вершину Большого Чимгана!</p>
+                <img src="../images/articles/002/shape_01.png" alt="Photo" class="step__shape">
+                <img src="../images/icons/border.png" alt="" class="step__border type_1">
+                <img src="../images/icons/border.png" alt="" class="step__border type_2">
+            </article>
+            <article class="step type-2" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800" data-aos-anchor-placement="top-bottom" data-aos-once="true">
+                <img src="../images/articles/002/shape_02.png" alt="Photo" class="step__shape">
+                <p><span>В</span>оды горной реки, вытекая из ущелья, образуют своеобразные каменные запруды – наполняя их чистой и ледяной водой.</p>
+                <img src="../images/icons/border.png" alt="" class="step__border type_3">
+                <img src="../images/icons/border.png" alt="" class="step__border type_4">
+            </article>
+            <article class="step" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800" data-aos-anchor-placement="top-bottom" data-aos-once="true">
+                <p><span>И</span> пусть это вас не отталкивает, ведь каждый рискнувший в них искупаться – получает заряд бодрости и энергии на неделю вперёд!</p>
+                <img src="../images/articles/002/shape_03.png" alt="Photo" class="step__shape">
+                <img src="../images/icons/border.png" alt="" class="step__border type_1">
+                <img src="../images/icons/border.png" alt="" class="step__border type_2">
+            </article>
+            <article class="step type-2" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800" data-aos-anchor-placement="top-bottom" data-aos-once="true">
+                <img src="../images/articles/002/shape_04.png" alt="Photo" class="step__shape">
+                <p><span>Т</span>акже это отличное место для семейного отдыха – пикника, на свежем воздухе, в объятиях необъятных гор, так манящих своей непреступносттю и величием!</p>
+                <img src="../images/icons/border.png" alt="" class="step__border type_3">
+                <img src="../images/icons/border.png" alt="" class="step__border type_4">
+            </article>
+            <article class="step" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800" data-aos-anchor-placement="top-bottom" data-aos-once="true">
+                <p><span>В</span>се эти красоты находятся близ поселка Янгикурган и являются достоянием Угамо-Чаткальского заповедника!</p>
+                <img src="../images/articles/002/shape_05.png" alt="Photo" class="step__shape">
+                <img src="../images/icons/border.png" alt="" class="step__border type_1">
+                <img src="../images/icons/border.png" alt="" class="step__border type_2">
+            </article>
+            <article class="step type-2" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800" data-aos-anchor-placement="top-bottom" data-aos-once="true">
+                <img src="../images/articles/link-to-album.png" alt="Photo" class="step__shape">
+                <p><span>Е</span>щё больше сочных фотографий и ярких моментов смотри в нашем <a href="../albums/album-2.html">фотоотчете!</a></p>
+                <img src="../images/icons/border.png" alt="" class="step__border type_3">
+                <img src="../images/icons/border.png" alt="" class="step__border type_4">
+            </article>
+        </section>
+    </div>
+
+    <div class="container">
+        <h3 class="swiper-header">Горные клубы, предлагающие посетить данное место:</h3>
+        <div class="swiper" id="slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://t.me/vse_v_gory" target="_blank">
+                        <img src="../images/articles/clubs/vse-v-gory.jpg" alt="Club">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://gouz.uz/" target="_blank">
+                        <img src="../images/articles/clubs/tayna-uz.jpg" alt="Club">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://t.me/brichmulla_travel" target="_blank">
+                        <img src="../images/articles/clubs/brichmulla.jpg" alt="Club">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://wolftravel.uz/" target="_blank">
+                        <img src="../images/articles/clubs/wolf-trvl.jpg" alt="Club">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container footer__position">
+            <div class="footer__inner">
+                <img src="../images/icons/CamelLogoGS.png" alt="Dune.uz" class="footer__logo footer__section">
+                <div class="footer__section" id="contacts">
+                    <ul>
+                        <li class="footer__list-item">
+                            <b>Контакты:</b>
+                        </li>
+                        <li class="footer__list-item">
+                            100124,<br>Республика Узбекистан, г. Ташкент
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="tel:+998911647045" class="footer__link">+998 (91) 164-70-45</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="mailto:info@dune.uz" class="footer__link">info@dune.uz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__inner bottom">
+                <p class="footer__rights">
+                    © 2022 - 2023 Developed by <a href="https://instagram.com/bayram.live?igshid=OTJlNzQ0NWM=" target="_blank">Arthur</a> | Все права защищены
+                </p>
+                <ul class="footer__social-links">
+                    <li class="footer__social-links__item">
+                        <a href="https://instagram.com/duneuz" target="_blank">
+                            <img src="../images/icons/Instagram.svg" class="footer__social-link-hover">
+                        </a>
+                    </li>
+                    <li class="footer__social-links__item">
+                        <a href="https://t.me/duneuz" target="_blank">
+                            <img src="../images/icons/Telegram.svg" class="footer__social-link-hover">
+                        </a>
+                    </li>
+                    <li class="footer__social-links__item">
+                        <a href="https://youtube.com/channel/UC8iFPIPltpnwJkgDfgajmJQ" target="_blank">
+                            <img src="../images/icons/Youtube.svg" class="footer__social-link-hover">
+                        </a>
+                    </li>
+                    <li class="footer__social-links__item">
+                        <a href="https://vk.com/duneuz" target="_blank">
+                            <img src="../images/icons/VKontakte.svg" class="footer__social-link-hover">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Scripts-->
+    <script src="../scripts/articles-script.js"></script>
+    <script src="../scripts/header-script.js"></script>
+</body>
+</html>
